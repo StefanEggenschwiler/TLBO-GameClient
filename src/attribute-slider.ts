@@ -4,8 +4,8 @@ import * as $ from 'jquery';
 const uuidv4 = require('uuid/v4');
 
 export class AttributeSlider {
-  @bindable fromValue: string;
-  @bindable toValue: string;
+  @bindable fromValue: number;
+  @bindable toValue: number;
   posChange: boolean;
   id: string;
 
@@ -29,7 +29,7 @@ export class AttributeSlider {
 
   valueChanged(updatedValue:number) {
     this.toValue = this.fromValue;
-    this.fromValue = updatedValue+'';
+    this.fromValue = updatedValue;
     if (Number(this.toValue) > updatedValue) {
       this.posChange = false;
     } else {
