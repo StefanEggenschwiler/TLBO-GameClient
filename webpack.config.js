@@ -13,7 +13,7 @@ const when = (condition, config, negativeConfig) =>
   condition ? ensureArray(config) : ensureArray(negativeConfig);
 
 // primary config:
-const title = 'Aurelia Navigation Skeleton';
+const title = 'TLBO Character Sheets';
 const outDir = path.resolve(__dirname, project.platform.output);
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
@@ -103,6 +103,12 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
         title, server, baseUrl
       }
     }),
+	new CopyWebpackPlugin([
+      { from: 'node_modules/bootstrap-slider/dist/bootstrap-slider.min.js', to: 'bootstrap-slider.min.js' }]
+	),
+	new CopyWebpackPlugin([
+      { from: 'node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css', to: 'bootstrap-slider.min.css' }]
+	),
     ...when(extractCss, new ExtractTextPlugin({
       filename: production ? '[contenthash].css' : '[id].css',
       allChunks: true

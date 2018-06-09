@@ -1,3 +1,20 @@
 <template>
-  <h1>${message}</h1>
+  <require from="./attribute-slider"></require>
+  <div class="container">
+    <h3>Specify Game ID</h3>
+    <div class="row">
+      <input id="gameId" value.bind="gameId" type="text">
+      <button class="btn btn-primary btn-lg" click.delegate="initiateSheet()">Simulate the next round</button>
+    </div>
+    <br>
+    <div if.bind="true">
+      <h3>Character Sheets</h3>
+      <div repeat.for="sheet of sheets">
+        ${sheet.name}
+        ${sheet.skills.eng} - ${sheet.skills.mec} - ${sheet.skills.pil} - ${sheet.skills.nav}
+        <br>
+        <attribute-slider></attribute-slider>
+      </div>
+    </div>
+  </div>
 </template>

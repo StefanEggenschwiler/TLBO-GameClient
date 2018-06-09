@@ -147,6 +147,12 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
+"@types/bootstrap-slider@^9.9.0":
+  version "9.9.0"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap-slider/-/bootstrap-slider-9.9.0.tgz#8cd57a31a5bea40a7b6931fd676f7bd07ea9ff31"
+  dependencies:
+    "@types/jquery" "*"
+
 "@types/debug@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-0.0.29.tgz#a1e514adfbd92f03a224ba54d693111dbf1f3754"
@@ -154,6 +160,10 @@
 "@types/jest@^22.2.0":
   version "22.2.3"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.2.3.tgz#0157c0316dc3722c43a7b71de3fdf3acbccef10d"
+
+"@types/jquery@*":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.2.tgz#8700226bdde24b6f98e3a60126dbaab3b2a3ab41"
 
 "@types/lodash@^4.14.105":
   version "4.14.109"
@@ -1897,6 +1907,10 @@ boom@2.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap-slider@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/bootstrap-slider/-/bootstrap-slider-10.0.2.tgz#442d84293aea248a31b1a3f976ac3737a7362a62"
 
 bootstrap@^4.1.1:
   version "4.1.1"

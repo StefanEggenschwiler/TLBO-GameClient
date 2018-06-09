@@ -1,21 +1,30 @@
 import {bindable, bindingMode} from 'aurelia-framework';
-import $ from "jquery";
+import * as $ from 'jquery';
 
 const uuidv4 = require('uuid/v4');
 
-export class CharacterAttributeSlider {
+export class AttributeSlider {
   @bindable({ defaultBindingMode: bindingMode.toView }) fromValue: number;
   @bindable({ defaultBindingMode: bindingMode.toView }) toValue: number;
   @bindable({ defaultBindingMode: bindingMode.toView }) posChange: boolean;
   id: string;
+  slider;
 
-  constructor(toValue:number, posChange:boolean) {
+  /*constructor(fromValue:number, posChange:boolean) {
     this.id = uuidv4();
-    this.toValue = toValue;
-    this.fromValue = toValue;
+    this.fromValue = fromValue;
+    this.toValue = fromValue;
     this.posChange = posChange;
     this.setSlider();
     console.log(this.id);
+  }*/
+
+  constructor() {
+    this.id = uuidv4();
+    console.log(this.id);
+    this.setSlider();
+    this.fromValue = 5;
+    this.toValue = 9;
   }
 
   valueChanged(updatedValue:number) {
