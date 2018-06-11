@@ -1,55 +1,23 @@
-.irs-from,
-.irs-to,
-.irs-single {
+#positive .slider-selection{
   background: limegreen;
 }
 
-.irs-from:after,
-.irs-to:after,
-.irs-single:after {
-  border-top-color: limegreen;
+.in-selection {
+  visibility: hidden;
 }
 
-.irs-line-mid,
-.irs-line-left,
-.irs-line-right,
-.irs-bar,
-.irs-bar-edge,
-.irs-slider {
-  background: url(../resources/sprite-skin-flat-green.png) repeat-x;
+#positive .slider-handle{
+  background: forestgreen;
 }
 
-.irs-bar {
-  height: 12px; top: 25px;
-  background-position: 0 -60px;
-}
-.irs-bar-edge {
-  top: 25px;
-  height: 12px; width: 9px;
-  background-position: 0 -90px;
+#negative .slider-selection{
+  background: red;
 }
 
-.irs-line {
-  height: 12px; top: 25px;
-}
-.irs-line-left {
-  height: 12px;
-  background-position: 0 -30px;
-}
-.irs-line-mid {
-  height: 12px;
-  background-position: 0 0;
-}
-.irs-line-right {
-  height: 12px;
-  background-position: 100% -30px;
+#negative .slider-handle{
+  background: darkred;
 }
 
-.irs-slider {
-  width: 16px; height: 18px;
-  top: 22px;
-  background-position: 0 -120px;
-}
-.irs-slider.state_hover, .irs-slider:hover {
-  background-position: 0 -150px;
+#neutral .slider-handle{
+  background: dimgrey;
 }

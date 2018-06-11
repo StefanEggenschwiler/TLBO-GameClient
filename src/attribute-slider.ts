@@ -11,63 +11,50 @@ export class AttributeSlider {
   id: string;
   grid: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
 
+  engineering;
+  mechanics;
+  piloting;
+  navigation;
+
   constructor() {
     this.id = uuidv4();
   }
 
   attached() {
+    this.engineering = $("#" + "a" + this.id);
+    this.mechanics = $("#" + "b" + this.id);
+    this.piloting = $("#" + "c" + this.id);
+    this.navigation = $("#" + "d" + this.id);
+
     this.setSlider();
     this.oldSheet = this.sheet;
     this.replaceColor();
   }
 
-  /*valueChanged(updatedValue:number) {
-    this.oldValue = this.currentValue;
-    this.currentValue = updatedValue;
-    if (this.oldValue > updatedValue) {
-      this.posChange = false;
-    } else {
-      this.posChange = true;
-    }
-    this.setSlider();
-  }*/
-
   setSlider() {
-    $("#" + "a" + this.id).ionRangeSlider({
-      type: "double",
-      step: "1",
-      grid: "true",
-      hide_min_max: true,
-      values: this.grid,
-      from: this.sheet.skills.eng,
-      to: this.oldSheet.skills.eng
+    this.engineering.slider({
+      id: "positive",
+      ticks: this.grid,
+      ticks_labels: this.grid,
+      value: [this.sheet.skills.eng, this.sheet.skills.eng]
     });
-    $("#" + "b" + this.id).ionRangeSlider({
-      type: "double",
-      step: "1",
-      grid: "true",
-      hide_min_max: true,
-      values: this.grid,
-      from: this.sheet.skills.mec,
-      to: this.sheet.skills.mec
+    this.mechanics.slider({
+      id: "negative",
+      ticks: this.grid,
+      ticks_labels: this.grid,
+      value: [this.sheet.skills.mec, this.sheet.skills.mec]
     });
-    $("#" + "c" + this.id).ionRangeSlider({
-      type: "double",
-      step: "1",
-      grid: "true",
-      hide_min_max: true,
-      values: this.grid,
-      from: this.sheet.skills.pil,
-      to: this.sheet.skills.pil
+    this.piloting.slider({
+      id: "positive",
+      ticks: this.grid,
+      ticks_labels: this.grid,
+      value: [this.sheet.skills.pil, this.sheet.skills.pil]
     });
-    $("#" + "d" + this.id).ionRangeSlider({
-      type: "double",
-      step: "1",
-      grid: "true",
-      hide_min_max: true,
-      values: this.grid,
-      from: this.sheet.skills.nav,
-      to: this.sheet.skills.nav
+    this.navigation.slider({
+      id: "neutral",
+      ticks: this.grid,
+      ticks_labels: this.grid,
+      value: [this.sheet.skills.nav, this.sheet.skills.nav]
     });
   }
 
@@ -76,6 +63,5 @@ export class AttributeSlider {
   }
 
   replaceColor() {
-
   }
 }
