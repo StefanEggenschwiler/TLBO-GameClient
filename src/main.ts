@@ -6,6 +6,9 @@ import {PLATFORM} from 'aurelia-pal';
 import * as Bluebird from 'bluebird';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'ion-rangeslider';
+import 'ion-rangeslider/css/ion.rangeSlider.css';
+import 'ion-rangeslider/css/ion.rangeSlider.skinFlat.css';
 import * as firebase from "firebase/app";
 
 // remove out if you don't want a Promise polyfill (remove also from webpack.config.js)

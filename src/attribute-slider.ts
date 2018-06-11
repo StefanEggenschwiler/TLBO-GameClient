@@ -1,14 +1,12 @@
 import {bindable, bindingMode, customElement} from 'aurelia-framework';
 import * as $ from 'jquery';
 import {CharacterSheet} from "./character-sheet";
-require('webpack-jquery-ui');
-require('webpack-jquery-ui/css');
 
 const uuidv4 = require('uuid/v4');
 
 @customElement('attribute-slider')
 export class AttributeSlider {
-  @bindable sheet: CharacterSheet;
+  @bindable({ defaultBindingMode: bindingMode.twoWay }) sheet: CharacterSheet;
   //oldValue: number;
   //posChange: boolean;
   id: string;
@@ -24,6 +22,9 @@ export class AttributeSlider {
 
   constructor() {
     this.id = uuidv4();
+  }
+
+  attached() {
     this.setSlider();
   }
 
@@ -39,5 +40,45 @@ export class AttributeSlider {
   }*/
 
   setSlider() {
+    $("#" + "a" + this.id).ionRangeSlider({
+      type: "double",
+      min: "1",
+      max: "25",
+      step: "1",
+      grid: "true",
+      grid_num: "10",
+      from: this.sheet.skills.eng,
+      to: this.sheet.skills.eng
+    });
+    $("#" + "b" + this.id).ionRangeSlider({
+      type: "double",
+      min: "1",
+      max: "25",
+      step: "1",
+      grid: "true",
+      grid_num: "10",
+      from: this.sheet.skills.mec,
+      to: this.sheet.skills.mec
+    });
+    $("#" + "c" + this.id).ionRangeSlider({
+      type: "double",
+      min: "1",
+      max: "25",
+      step: "1",
+      grid: "true",
+      grid_num: "10",
+      from: this.sheet.skills.pil,
+      to: this.sheet.skills.pil
+    });
+    $("#" + "d" + this.id).ionRangeSlider({
+      type: "double",
+      min: "1",
+      max: "25",
+      step: "1",
+      grid: "true",
+      grid_num: "10",
+      from: this.sheet.skills.nav,
+      to: this.sheet.skills.nav
+    });
   }
 }

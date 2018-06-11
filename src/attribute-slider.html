@@ -1,19 +1,16 @@
 <template>
+  <h4 style="text-align: center;">${sheet.name}</h4>
+  <h5>Engineering</h5>
+  <input id="${'a'+id}"/>
   <br>
-  <div id="'a' + ${id}" class="slider" style="width: 100%">
-    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.eng}" list="tickmarks">
-  </div>
-  <div id="'b' + ${id}" class="slider" style="width: 100%">
-    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.mec}" list="tickmarks">
-  </div>
-  <div id="'c' + ${id}" class="slider" style="width: 100%">
-    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.pil}" list="tickmarks">
-  </div>
-  <div id="'d' + ${id}" class="slider" style="width: 100%">
-    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.nav}" list="tickmarks">
-  </div>
-
-  <datalist id="tickmarks">
-    <option repeat.for="i of 24" value="${i+1}" label="${i+1}">
-  </datalist>
+  <h5>Mechanics</h5>
+  <input id="${'b'+id}"/>
+  <br>
+  <h5>Piloting</h5>
+  <input id="${'c'+id}"/>
+  <br>
+  <h5>Navigation</h5>
+  <input id="${'d'+id}"/>
+  <br>
+  <hr>
 </template>
