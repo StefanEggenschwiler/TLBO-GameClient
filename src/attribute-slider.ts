@@ -7,18 +7,9 @@ const uuidv4 = require('uuid/v4');
 @customElement('attribute-slider')
 export class AttributeSlider {
   @bindable({ defaultBindingMode: bindingMode.twoWay }) sheet: CharacterSheet;
-  //oldValue: number;
-  //posChange: boolean;
+  oldSheet: CharacterSheet;
   id: string;
-
-  /*constructor(oldValue:number, posChange:boolean) {
-    this.id = uuidv4();
-    this.oldValue = oldValue;
-    this.currentValue = oldValue;
-    this.posChange = posChange;
-    this.setSlider();
-    console.log(this.id);
-  }*/
+  grid: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
 
   constructor() {
     this.id = uuidv4();
@@ -26,6 +17,8 @@ export class AttributeSlider {
 
   attached() {
     this.setSlider();
+    this.oldSheet = this.sheet;
+    this.replaceColor();
   }
 
   /*valueChanged(updatedValue:number) {
@@ -42,43 +35,47 @@ export class AttributeSlider {
   setSlider() {
     $("#" + "a" + this.id).ionRangeSlider({
       type: "double",
-      min: "1",
-      max: "25",
       step: "1",
       grid: "true",
-      grid_num: "10",
+      hide_min_max: true,
+      values: this.grid,
       from: this.sheet.skills.eng,
-      to: this.sheet.skills.eng
+      to: this.oldSheet.skills.eng
     });
     $("#" + "b" + this.id).ionRangeSlider({
       type: "double",
-      min: "1",
-      max: "25",
       step: "1",
       grid: "true",
-      grid_num: "10",
+      hide_min_max: true,
+      values: this.grid,
       from: this.sheet.skills.mec,
       to: this.sheet.skills.mec
     });
     $("#" + "c" + this.id).ionRangeSlider({
       type: "double",
-      min: "1",
-      max: "25",
       step: "1",
       grid: "true",
-      grid_num: "10",
+      hide_min_max: true,
+      values: this.grid,
       from: this.sheet.skills.pil,
       to: this.sheet.skills.pil
     });
     $("#" + "d" + this.id).ionRangeSlider({
       type: "double",
-      min: "1",
-      max: "25",
       step: "1",
       grid: "true",
-      grid_num: "10",
+      hide_min_max: true,
+      values: this.grid,
       from: this.sheet.skills.nav,
       to: this.sheet.skills.nav
     });
+  }
+
+  sheetChanged(newValue: CharacterSheet, oldValue: CharacterSheet) {
+    this.oldSheet = newValue;
+  }
+
+  replaceColor() {
+
   }
 }

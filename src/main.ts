@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'ion-rangeslider';
 import 'ion-rangeslider/css/ion.rangeSlider.css';
 import 'ion-rangeslider/css/ion.rangeSlider.skinFlat.css';
+import 'resources/main.css'
 import * as firebase from "firebase/app";
 
 // remove out if you don't want a Promise polyfill (remove also from webpack.config.js)

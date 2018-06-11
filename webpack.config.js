@@ -85,6 +85,11 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
     ]
   },
   plugins: [
+    new CopyWebpackPlugin(
+      [
+        { from: 'static/favicon.ico', to: 'favicon.ico' }
+      ]
+    ),
     new AureliaPlugin(),
     new ProvidePlugin({
       'Promise': 'bluebird'
