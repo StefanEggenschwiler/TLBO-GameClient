@@ -1,3 +1,19 @@
 <template>
-  <input id="${id}" type="text"/><br/>
+  <br>
+  <div id="'a' + ${id}" class="slider" style="width: 100%">
+    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.eng}" list="tickmarks">
+  </div>
+  <div id="'b' + ${id}" class="slider" style="width: 100%">
+    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.mec}" list="tickmarks">
+  </div>
+  <div id="'c' + ${id}" class="slider" style="width: 100%">
+    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.pil}" list="tickmarks">
+  </div>
+  <div id="'d' + ${id}" class="slider" style="width: 100%">
+    <input type="range" min="1" max="25" steps="1" value="${sheet.skills.nav}" list="tickmarks">
+  </div>
+
+  <datalist id="tickmarks">
+    <option repeat.for="i of 24" value="${i+1}" label="${i+1}">
+  </datalist>
 </template>

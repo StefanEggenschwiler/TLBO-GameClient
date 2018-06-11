@@ -87,6 +87,12 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
   plugins: [
     new AureliaPlugin(),
     new ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery'",
+      "window.$": "jquery"
+    }),
+    new ProvidePlugin({
       'Promise': 'bluebird'
     }),
     new ModuleDependenciesPlugin({
@@ -103,12 +109,6 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
         title, server, baseUrl
       }
     }),
-	new CopyWebpackPlugin([
-      { from: 'node_modules/bootstrap-slider/dist/bootstrap-slider.min.js', to: 'bootstrap-slider.min.js' }]
-	),
-	new CopyWebpackPlugin([
-      { from: 'node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css', to: 'bootstrap-slider.min.css' }]
-	),
     ...when(extractCss, new ExtractTextPlugin({
       filename: production ? '[contenthash].css' : '[id].css',
       allChunks: true
