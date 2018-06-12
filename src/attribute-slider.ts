@@ -17,7 +17,6 @@ export class AttributeSlider {
   navSlider;
 
   constructor() {
-    console.log("constructor()");
     this.id = uuidv4();
   }
 
@@ -58,13 +57,10 @@ export class AttributeSlider {
   }
 
   pingChanged(newValue, oldValue) {
-    console.log("pingChanged()");
-    this.refreshSlider()
+    this.refreshSlider(this.sheet.getChanges())
   }
 
-  updateSliderColor() {
-    let changes = this.sheet.getChanges();
-    console.log("updateSliderColor()", changes);
+  updateSliderColor(changes: Boolean[]) {
     for (let i in changes) {
       if (changes[i] == null) {
         $('#' + i + this.id + ' .slider-handle').css('background','dimgrey');
@@ -80,11 +76,32 @@ export class AttributeSlider {
     }
   }
 
-  refreshSlider() {
-    $("#" + "a" + this.id).slider('setValue', [this.sheet.oldSkills.eng, this.sheet.currentSkills.eng], true, true);
-    $("#" + "b" + this.id).slider('setValue', [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec], true, true);
-    $("#" + "c" + this.id).slider('setValue', [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil], true, true);
-    $("#" + "d" + this.id).slider('setValue', [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav], true, true);
-    this.updateSliderColor();
+  refreshSlider(changes: Boolean[]) {
+    /*
+    Workaround for CSS related problems in the bootstrap-slider package.
+    */
+    let valuesEng: number[] = [this.sheet.oldSkills.eng, this.sheet.currentSkills.eng];
+    let valuesMec: number[] = [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec];
+    let valuesPil: number[] = [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil];
+    let valuesNav: number[] = [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav];
+
+    if (!changes[0]) {
+      valuesEng = [this.sheet.currentSkills.eng, this.sheet.oldSkills.eng];
+    }
+    if (!changes[1]) {
+      valuesMec = [this.sheet.currentSkills.mec, this.sheet.oldSkills.mec];
+    }
+    if (!changes[2]) {
+      valuesPil = [this.sheet.currentSkills.pil, this.sheet.oldSkills.pil];
+    }
+    if (!changes[3]) {
+      valuesNav = [this.sheet.currentSkills.nav, this.sheet.oldSkills.nav];
+    }
+    $("#" + "a" + this.id).slider('setValue', valuesEng, true, true);
+    $("#" + "b" + this.id).slider('setValue', valuesMec, true, true);
+    $("#" + "c" + this.id).slider('setValue', valuesPil, true, true);
+    $("#" + "d" + this.id).slider('setValue', valuesNav, true, true);
+
+    this.updateSliderColor(changes);
   }
 }

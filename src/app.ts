@@ -12,7 +12,7 @@ export class App {
   }
 
   initiateSheet() {
-    console.log(this.gameId);
+    console.log("gameId: ",this.gameId);
     this.sheets = [];
     let component = this;
     let sheetRef = firebase.database().ref('games/' + this.gameId + '/turns').limitToLast(1);
@@ -33,7 +33,6 @@ export class App {
           });
         });
       }
-      console.log(component.sheets);
       component.gameInit = true;
       component.ping = !component.ping;
     });

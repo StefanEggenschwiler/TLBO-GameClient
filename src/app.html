@@ -1,14 +1,17 @@
 <template>
   <require from="./attribute-slider"></require>
   <div class="container">
-    <h3>Specify Game ID</h3>
-    <div class="row">
-      <input id="gameId" value.bind="gameId" type="text">
-      <button class="btn btn-primary btn-lg" click.delegate="initiateSheet()">Initiate Game</button>
+    <div if.bind="!gameInit">
+      <h3>Specify Game ID </h3>
+      <div class="row">
+        <input id="gameId" value.bind="gameId" type="text">
+        <button class="btn btn-primary btn-lg" click.delegate="initiateSheet()">Initiate Game</button>
+      </div>
     </div>
     <br>
     <div if.bind="gameInit">
-      <h3>Character Sheets</h3>
+      <h2 style="text-align: center;">Character Sheets</h2>
+      <br>
       <div repeat.for="sheet of sheets">
         <attribute-slider sheet.bind="sheet" ping.bind="ping"></attribute-slider>
       </div>
