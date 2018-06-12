@@ -27,10 +27,7 @@ export class CharacterSheet {
   }
 
   updateSkills(eng: number, mec: number, pil: number, nav: number) {
-    this.oldSkills.eng = this.currentSkills.eng;
-    this.oldSkills.mec = this.currentSkills.mec;
-    this.oldSkills.pil = this.currentSkills.pil;
-    this.oldSkills.nav = this.currentSkills.nav;
+    this.oldSkills = Object.assign({}, this.currentSkills);
 
     this.currentSkills.eng = eng;
     this.currentSkills.mec = mec;
