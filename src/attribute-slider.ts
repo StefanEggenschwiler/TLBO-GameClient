@@ -10,9 +10,6 @@ export class AttributeSlider {
   id: string;
   grid: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
 
-  currentSkills: number[] = [];
-  oldSkills: number[] = [];
-
   engSlider;
   mecSlider;
   pilSlider;
@@ -21,7 +18,6 @@ export class AttributeSlider {
   constructor() {
     console.log("constructor()");
     this.id = uuidv4();
-    this.oldSkills = [];
   }
 
   attached() {
@@ -30,12 +26,7 @@ export class AttributeSlider {
     this.pilSlider = $("#" + "c" + this.id);
     this.navSlider = $("#" + "d" + this.id);
 
-    this.currentSkills = [];
-    this.currentSkills.push(this.sheet.skills.eng, this.sheet.skills.mec, this.sheet.skills.pil, this.sheet.skills.nav);
-    this.oldSkills = this.currentSkills.slice(0);
     this.setSlider();
-    //console.log("attached()");
-    //console.log(this.currentSkills, this.oldSkills);
   }
 
   setSlider() {
@@ -43,25 +34,25 @@ export class AttributeSlider {
       id: "0" + this.id,
       ticks: this.grid,
       ticks_labels: this.grid,
-      value: [this.currentSkills[0], this.oldSkills[0]]
+      value: [this.sheet.oldSkills.eng, this.sheet.currentSkills.eng]
     });
     this.mecSlider.slider({
       id: "1" + this.id,
       ticks: this.grid,
       ticks_labels: this.grid,
-      value: [this.currentSkills[1], this.oldSkills[1]]
+      value: [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec]
     });
     this.pilSlider.slider({
       id: "2" + this.id,
       ticks: this.grid,
       ticks_labels: this.grid,
-      value: [this.currentSkills[2], this.oldSkills[2]]
+      value: [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil]
     });
     this.navSlider.slider({
       id: "3" + this.id,
       ticks: this.grid,
       ticks_labels: this.grid,
-      value: [this.currentSkills[3], this.oldSkills[3]]
+      value: [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav]
     });
   }
 
@@ -71,11 +62,12 @@ export class AttributeSlider {
     console.log("sheetChanged()");
     console.log(oldValue, newValue);
     //this.updateSliderColor();
+    this.refreshSlider();
   }
 
   updateSliderColor() {
-    for (let i in this.currentSkills) {
-      if (this.currentSkills[i] > this.oldSkills[i]) {
+    for (let i in new Array(4)) {
+      /*if (this.currentSkills[i] > this.oldSkills[i]) {
         $('#' + i + this.id + ' .slider-handle').css('background','forestgreen');
         $('#' + i + this.id + ' .slider-selection').css('background','limegreen');
       } else {
@@ -84,11 +76,19 @@ export class AttributeSlider {
       }
       if (this.currentSkills[i] == this.oldSkills[i]) {
         $('#' + i + this.id + ' .slider-handle').css('background','dimgrey');
-      }
+      }*/
     }
-    this.oldSkills = [];
+    /*this.oldSkills = [];
     this.oldSkills.push(this.sheet.skills.eng, this.sheet.skills.mec, this.sheet.skills.pil, this.sheet.skills.nav);
+    */
     console.log("updateSliderColor()");
     //console.log(this.currentSkills, this.oldSkills);
+  }
+
+  refreshSlider() {
+    $("#" + "a" + this.id).slider('setValue', [this.sheet.oldSkills.eng, this.sheet.currentSkills.eng], true, true);
+    $("#" + "b" + this.id).slider('setValue', [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec], true, true);
+    $("#" + "c" + this.id).slider('setValue', [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil], true, true);
+    $("#" + "d" + this.id).slider('setValue', [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav], true, true);
   }
 }

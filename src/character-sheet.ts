@@ -1,10 +1,17 @@
 export class CharacterSheet {
   name: string;
   id: string;
-  skills: SkillSheet;
+  currentSkills: SkillSheet;
+  oldSkills: SkillSheet;
 
   constructor(id: string, name: string, eng: number, mec: number, pil: number, nav: number) {
-    this.skills = {
+    this.currentSkills = {
+      eng: eng,
+      mec: mec,
+      pil: pil,
+      nav: nav
+    };
+    this.oldSkills = {
       eng: eng,
       mec: mec,
       pil: pil,
@@ -12,10 +19,6 @@ export class CharacterSheet {
     };
     this.name = name;
     this.id = id;
-  }
-
-  toString() {
-    return (this.id && 'name: ' + this.name || '') + 'eng: ' + this.skills.eng + ' mec: ' + this.skills.mec + ' pil: ' + this.skills.pil + ' nav: ' + this.skills.nav;
   }
 }
 

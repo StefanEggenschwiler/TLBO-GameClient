@@ -29,10 +29,14 @@ export class App {
         snapshot.forEach(function (childSnapshot) {
           childSnapshot.val().characters.forEach(function (character) {
             component.sheets[i].name = 'Trolldorf'+i;
-            component.sheets[i].skills.eng = character.eng;
-            component.sheets[i].skills.mec = character.mec;
-            component.sheets[i].skills.pil = character.pil;
-            component.sheets[i++].skills.nav = character.nav;
+            component.sheets[i].oldSkills.eng = component.sheets[i].currentSkills.eng;
+            component.sheets[i].oldSkills.mec = component.sheets[i].currentSkills.mec;
+            component.sheets[i].oldSkills.pil = component.sheets[i].currentSkills.pil;
+            component.sheets[i].oldSkills.nav = component.sheets[i].currentSkills.nav;
+            component.sheets[i].currentSkills.eng = character.eng;
+            component.sheets[i].currentSkills.mec = character.mec;
+            component.sheets[i].currentSkills.pil = character.pil;
+            component.sheets[i++].currentSkills.nav = character.nav;
           });
         });
       }
