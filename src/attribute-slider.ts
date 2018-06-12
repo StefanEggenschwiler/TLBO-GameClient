@@ -7,6 +7,7 @@ const uuidv4 = require('uuid/v4');
 @customElement('attribute-slider')
 export class AttributeSlider {
   @bindable sheet: CharacterSheet;
+  @bindable ping: Boolean;
   id: string;
   grid: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
 
@@ -56,33 +57,28 @@ export class AttributeSlider {
     });
   }
 
-  sheetChanged(newValue, oldValue) {
-    //this.currentSkills = [];
-    //this.currentSkills.push(newValue.skills.eng, newValue.skills.mec, newValue.skills.pil, newValue.skills.nav);
+  pingChanged(newValue, oldValue) {
     console.log("sheetChanged()");
     console.log(oldValue, newValue);
-    //this.updateSliderColor();
-    this.refreshSlider();
+    this.refreshSlider()
   }
 
   updateSliderColor() {
-    for (let i in new Array(4)) {
-      /*if (this.currentSkills[i] > this.oldSkills[i]) {
-        $('#' + i + this.id + ' .slider-handle').css('background','forestgreen');
-        $('#' + i + this.id + ' .slider-selection').css('background','limegreen');
-      } else {
-        $('#' + i + this.id + ' .slider-handle').css('background','darkred');
-        $('#' + i + this.id + ' .slider-selection').css('background','red');
-      }
-      if (this.currentSkills[i] == this.oldSkills[i]) {
+    let changes = this.sheet.getChanges();
+    console.log("updateSliderColor()", changes);
+    for (let i in changes) {
+      if (changes[i] == null) {
         $('#' + i + this.id + ' .slider-handle').css('background','dimgrey');
-      }*/
+      } else {
+        if (changes[i]) {
+          $('#' + i + this.id + ' .slider-handle').css('background','forestgreen');
+          $('#' + i + this.id + ' .slider-selection').css('background','limegreen');
+        } else {
+          $('#' + i + this.id + ' .slider-handle').css('background','darkred');
+          $('#' + i + this.id + ' .slider-selection').css('background','red');
+        }
+      }
     }
-    /*this.oldSkills = [];
-    this.oldSkills.push(this.sheet.skills.eng, this.sheet.skills.mec, this.sheet.skills.pil, this.sheet.skills.nav);
-    */
-    console.log("updateSliderColor()");
-    //console.log(this.currentSkills, this.oldSkills);
   }
 
   refreshSlider() {
@@ -90,5 +86,6 @@ export class AttributeSlider {
     $("#" + "b" + this.id).slider('setValue', [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec], true, true);
     $("#" + "c" + this.id).slider('setValue', [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil], true, true);
     $("#" + "d" + this.id).slider('setValue', [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav], true, true);
+    this.updateSliderColor();
   }
 }

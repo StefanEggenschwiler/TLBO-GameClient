@@ -10,7 +10,7 @@
     <div if.bind="gameInit">
       <h3>Character Sheets</h3>
       <div repeat.for="sheet of sheets">
-        <attribute-slider sheet.bind="sheet"></attribute-slider>
+        <attribute-slider sheet.bind="sheet" ping.bind="ping"></attribute-slider>
       </div>
     </div>
   </div>
