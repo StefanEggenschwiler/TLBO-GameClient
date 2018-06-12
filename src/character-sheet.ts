@@ -39,26 +39,10 @@ export class CharacterSheet {
   }
 
   getChanges() {
-    if (this.oldSkills.eng < this.currentSkills.eng) {
-      this.engChange = true;
-    } else {
-      this.engChange = false;
-    }
-    if (this.oldSkills.mec < this.currentSkills.mec) {
-      this.mecChange = true;
-    } else {
-      this.mecChange = false;
-    }
-    if (this.oldSkills.pil < this.currentSkills.pil) {
-      this.pilChange = true;
-    } else {
-      this.pilChange = false;
-    }
-    if (this.oldSkills.nav < this.currentSkills.nav) {
-      this.navChange = true;
-    } else {
-      this.navChange = false;
-    }
+    this.engChange = this.oldSkills.eng < this.currentSkills.eng;
+    this.mecChange = this.oldSkills.mec < this.currentSkills.mec;
+    this.pilChange = this.oldSkills.pil < this.currentSkills.pil;
+    this.navChange = this.oldSkills.nav < this.currentSkills.nav;
     if (this.oldSkills.eng == this.currentSkills.eng) {
       this.engChange = null;
     }
