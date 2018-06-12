@@ -1,4 +1,4 @@
-import {bindable, bindingMode, customElement} from 'aurelia-framework';
+import {bindable, customElement} from 'aurelia-framework';
 import * as $ from 'jquery';
 import {CharacterSheet} from "./character-sheet";
 
