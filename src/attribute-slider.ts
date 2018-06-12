@@ -58,7 +58,7 @@ export class AttributeSlider {
   }
 
   pingChanged(newValue, oldValue) {
-    console.log("sheetChanged()");
+    console.log("pingChanged()");
     console.log(oldValue, newValue);
     this.refreshSlider()
   }
