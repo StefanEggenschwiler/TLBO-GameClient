@@ -32,24 +32,28 @@ export class AttributeSlider {
   setSlider() {
     this.engSlider.slider({
       id: "0" + this.id,
+      enabled: false,
       ticks: this.grid,
       ticks_labels: this.grid,
       value: [this.sheet.oldSkills.eng, this.sheet.currentSkills.eng]
     });
     this.mecSlider.slider({
       id: "1" + this.id,
+      enabled: false,
       ticks: this.grid,
       ticks_labels: this.grid,
       value: [this.sheet.oldSkills.mec, this.sheet.currentSkills.mec]
     });
     this.pilSlider.slider({
       id: "2" + this.id,
+      enabled: false,
       ticks: this.grid,
       ticks_labels: this.grid,
       value: [this.sheet.oldSkills.pil, this.sheet.currentSkills.pil]
     });
     this.navSlider.slider({
       id: "3" + this.id,
+      enabled: false,
       ticks: this.grid,
       ticks_labels: this.grid,
       value: [this.sheet.oldSkills.nav, this.sheet.currentSkills.nav]
