@@ -19,9 +19,10 @@ export class App {
     sheetRef.on('value', function(snapshot) {
       if (component.sheets.length === 0) {
         console.log("init");
+        let counter = 1;
         snapshot.forEach(function (childSnapshot) {
           childSnapshot.val().characters.forEach(function (character) {
-            component.sheets.push(new CharacterSheet(childSnapshot.key, character.name, character.eng, character.mec, character.pil, character.nav));
+            component.sheets.push(new CharacterSheet(''+counter++, character.name, character.eng, character.mec, character.pil, character.nav));
           });
         });
       } else {
