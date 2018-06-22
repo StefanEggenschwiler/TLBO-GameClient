@@ -22,7 +22,7 @@ export class App {
         let counter = 1;
         snapshot.forEach(function (childSnapshot) {
           childSnapshot.val().characters.forEach(function (character) {
-            component.sheets.push(new CharacterSheet(''+counter++, character.name, character.eng, character.mec, character.pil, character.nav));
+            component.sheets.push(new CharacterSheet(''+counter++, character.name, character.eng, character.mec, character.pil, character.nav, character.task));
           });
         });
       } else {
@@ -30,7 +30,7 @@ export class App {
         let i = 0;
         snapshot.forEach(function (childSnapshot) {
           childSnapshot.val().characters.forEach(function (character) {
-            component.sheets[i++].updateSkills(character.eng, character.mec, character.pil, character.nav);
+            component.sheets[i++].updateSkills(character.eng, character.mec, character.pil, character.nav, character.task);
           });
         });
       }

@@ -1,4 +1,5 @@
 export class CharacterSheet {
+  task: string;
   name: string;
   id: string;
   currentSkills: SkillSheet;
@@ -9,7 +10,7 @@ export class CharacterSheet {
   pilChange: Boolean = null;
   navChange: Boolean = null;
 
-  constructor(id: string, name: string, eng: number, mec: number, pil: number, nav: number) {
+  constructor(id: string, name: string, eng: number, mec: number, pil: number, nav: number, task: string) {
     this.currentSkills = {
       eng: eng,
       mec: mec,
@@ -24,15 +25,18 @@ export class CharacterSheet {
     };
     this.name = name;
     this.id = id;
+    this.task = task;
   }
 
-  updateSkills(eng: number, mec: number, pil: number, nav: number) {
+  updateSkills(eng: number, mec: number, pil: number, nav: number, task: string) {
     this.oldSkills = Object.assign({}, this.currentSkills);
 
     this.currentSkills.eng = eng;
     this.currentSkills.mec = mec;
     this.currentSkills.pil = pil;
     this.currentSkills.nav = nav;
+
+    this.task = task;
   }
 
   getChanges() {
