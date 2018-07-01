@@ -1,0 +1,978 @@
+{
+  "games" : {
+    "-LFcbTd-h62x5MEaPjtc" : {
+      "scenario" : "linear",
+      "timestamp" : 1529689795135,
+      "turns" : {
+        "-LFcbTd0Kg4JVp3h7Nqe" : {
+          "characters" : [ null, {
+            "eng" : 10,
+            "mec" : 11,
+            "name" : "Anna",
+            "nav" : 20,
+            "pil" : 10,
+            "task" : "Idling"
+          }, {
+            "eng" : 18,
+            "mec" : 2,
+            "name" : "Phillip",
+            "nav" : 9,
+            "pil" : 3,
+            "task" : "Idling"
+          }, {
+            "eng" : 7,
+            "mec" : 21,
+            "name" : "Toshi",
+            "nav" : 10,
+            "pil" : 18,
+            "task" : "Idling"
+          }, {
+            "eng" : 16,
+            "mec" : 19,
+            "name" : "Vanessa",
+            "nav" : 12,
+            "pil" : 12,
+            "task" : "Idling"
+          }, {
+            "eng" : 23,
+            "mec" : 5,
+            "name" : "Natasha",
+            "nav" : 4,
+            "pil" : 22,
+            "task" : "Idling"
+          }, {
+            "eng" : 12,
+            "mec" : 11,
+            "name" : "Andy",
+            "nav" : 3,
+            "pil" : 17,
+            "task" : "Idling"
+          }, {
+            "eng" : 13,
+            "mec" : 6,
+            "name" : "Susan",
+            "nav" : 14,
+            "pil" : 8,
+            "task" : "Idling"
+          }, {
+            "eng" : 18,
+            "mec" : 3,
+            "name" : "Laura",
+            "nav" : 21,
+            "pil" : 17,
+            "task" : "Idling"
+          }, {
+            "eng" : 4,
+            "mec" : 5,
+            "name" : "Patricia",
+            "nav" : 20,
+            "pil" : 3,
+            "task" : "Idling"
+          }, {
+            "eng" : 1,
+            "mec" : 12,
+            "name" : "Silvester",
+            "nav" : 2,
+            "pil" : 17,
+            "task" : "Idling"
+          } ],
+          "efficiency" : 46
+        },
+        "-LFccE6f_1YAnfArxIBS" : {
+          "characters" : [ null, {
+            "eng" : 12,
+            "mec" : 15,
+            "name" : "Anna",
+            "nav" : 25,
+            "pil" : 11,
+            "task" : "Campfire"
+          }, {
+            "eng" : 23,
+            "mec" : 1,
+            "name" : "Phillip",
+            "nav" : 17,
+            "pil" : 4,
+            "task" : "Campfire"
+          }, {
+            "eng" : 13,
+            "mec" : 22,
+            "name" : "Toshi",
+            "nav" : 13,
+            "pil" : 19,
+            "task" : "Campfire"
+          }, {
+            "eng" : 16,
+            "mec" : 19,
+            "name" : "Vanessa",
+            "nav" : 12,
+            "pil" : 12,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 4,
+            "name" : "Natasha",
+            "nav" : 12,
+            "pil" : 24,
+            "task" : "Campfire"
+          }, {
+            "eng" : 17,
+            "mec" : 14,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 14,
+            "mec" : 2,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Campfire"
+          }, {
+            "eng" : 21,
+            "mec" : 11,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 13,
+            "mec" : 13,
+            "name" : "Patricia",
+            "nav" : 25,
+            "pil" : 7,
+            "task" : "Campfire"
+          }, {
+            "eng" : 3,
+            "mec" : 20,
+            "name" : "Silvester",
+            "nav" : 12,
+            "pil" : 19,
+            "task" : "Campfire"
+          } ],
+          "efficiency" : 59
+        },
+        "-LFcckAyesHnwYh12d_A" : {
+          "characters" : [ null, {
+            "eng" : 12,
+            "mec" : 15,
+            "name" : "Anna",
+            "nav" : 25,
+            "pil" : 11,
+            "task" : "Campfire"
+          }, {
+            "eng" : 23,
+            "mec" : 1,
+            "name" : "Phillip",
+            "nav" : 17,
+            "pil" : 4,
+            "task" : "Campfire"
+          }, {
+            "eng" : 11,
+            "mec" : 21,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Campfire"
+          }, {
+            "eng" : 16,
+            "mec" : 18,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 6,
+            "name" : "Natasha",
+            "nav" : 12,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 19,
+            "mec" : 16,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 14,
+            "mec" : 2,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Campfire"
+          }, {
+            "eng" : 21,
+            "mec" : 11,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 18,
+            "mec" : 12,
+            "name" : "Patricia",
+            "nav" : 20,
+            "pil" : 12,
+            "task" : "Campfire"
+          }, {
+            "eng" : 3,
+            "mec" : 20,
+            "name" : "Silvester",
+            "nav" : 12,
+            "pil" : 19,
+            "task" : "Campfire"
+          } ],
+          "efficiency" : 60
+        },
+        "-LFcdK1Qs0FEBkJmoUsV" : {
+          "characters" : [ null, {
+            "eng" : 12,
+            "mec" : 20,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 1,
+            "name" : "Phillip",
+            "nav" : 17,
+            "pil" : 4,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 11,
+            "mec" : 21,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Plane"
+          }, {
+            "eng" : 18,
+            "mec" : 18,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 25,
+            "mec" : 8,
+            "name" : "Natasha",
+            "nav" : 12,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 21,
+            "mec" : 18,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 16,
+            "mec" : 4,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 23,
+            "mec" : 13,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 18,
+            "mec" : 12,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 3,
+            "mec" : 20,
+            "name" : "Silvester",
+            "nav" : 14,
+            "pil" : 21,
+            "task" : "Stargazing"
+          } ],
+          "efficiency" : 63
+        },
+        "-LFcduNM57gqmfAQp1e6" : {
+          "characters" : [ null, {
+            "eng" : 14,
+            "mec" : 20,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 25,
+            "mec" : 7,
+            "name" : "Phillip",
+            "nav" : 13,
+            "pil" : 19,
+            "task" : "Plane"
+          }, {
+            "eng" : 13,
+            "mec" : 23,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 18,
+            "mec" : 18,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 8,
+            "name" : "Natasha",
+            "nav" : 12,
+            "pil" : 24,
+            "task" : "Plane"
+          }, {
+            "eng" : 21,
+            "mec" : 18,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 16,
+            "mec" : 4,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Campfire"
+          }, {
+            "eng" : 23,
+            "mec" : 13,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 20,
+            "mec" : 12,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 3,
+            "mec" : 20,
+            "name" : "Silvester",
+            "nav" : 16,
+            "pil" : 23,
+            "task" : "Stargazing"
+          } ],
+          "efficiency" : 66
+        },
+        "-LFcefyLXfZp4ytXBGWO" : {
+          "characters" : [ null, {
+            "eng" : 14,
+            "mec" : 20,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 7,
+            "name" : "Phillip",
+            "nav" : 15,
+            "pil" : 21,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 15,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 20,
+            "mec" : 20,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 8,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 23,
+            "mec" : 18,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 18,
+            "mec" : 4,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 25,
+            "mec" : 15,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 20,
+            "mec" : 12,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Campfire"
+          }, {
+            "eng" : 5,
+            "mec" : 20,
+            "name" : "Silvester",
+            "nav" : 16,
+            "pil" : 23,
+            "task" : "Sandcastles"
+          } ],
+          "efficiency" : 68
+        },
+        "-LFcfIILZA9F54Ed4Aht" : {
+          "characters" : [ null, {
+            "eng" : 16,
+            "mec" : 22,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 9,
+            "name" : "Phillip",
+            "nav" : 15,
+            "pil" : 21,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 17,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 22,
+            "mec" : 22,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 10,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 20,
+            "mec" : 6,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 17,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 22,
+            "mec" : 14,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 7,
+            "mec" : 22,
+            "name" : "Silvester",
+            "nav" : 16,
+            "pil" : 23,
+            "task" : "Tinkering"
+          } ],
+          "efficiency" : 72
+        },
+        "-LFcfUWEKOzT1REeRSui" : {
+          "characters" : [ null, {
+            "eng" : 18,
+            "mec" : 24,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 11,
+            "name" : "Phillip",
+            "nav" : 15,
+            "pil" : 21,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 19,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 11,
+            "pil" : 24,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 24,
+            "mec" : 24,
+            "name" : "Vanessa",
+            "nav" : 8,
+            "pil" : 18,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 12,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 22,
+            "name" : "Andy",
+            "nav" : 12,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 22,
+            "mec" : 8,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 19,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 17,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 24,
+            "mec" : 16,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 9,
+            "mec" : 24,
+            "name" : "Silvester",
+            "nav" : 16,
+            "pil" : 23,
+            "task" : "Tinkering"
+          } ],
+          "efficiency" : 75
+        },
+        "-LFcgOqERlD1JX8jbmG5" : {
+          "characters" : [ null, {
+            "eng" : 20,
+            "mec" : 25,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 11,
+            "name" : "Phillip",
+            "nav" : 15,
+            "pil" : 21,
+            "task" : "Plane"
+          }, {
+            "eng" : 19,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 13,
+            "pil" : 25,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 24,
+            "mec" : 24,
+            "name" : "Vanessa",
+            "nav" : 10,
+            "pil" : 20,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 25,
+            "mec" : 12,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 22,
+            "name" : "Andy",
+            "nav" : 14,
+            "pil" : 19,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 24,
+            "mec" : 10,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 25,
+            "mec" : 19,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 19,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 25,
+            "mec" : 18,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 9,
+            "mec" : 24,
+            "name" : "Silvester",
+            "nav" : 16,
+            "pil" : 23,
+            "task" : "Plane"
+          } ],
+          "efficiency" : 77
+        },
+        "-LFchE-V5qLleAowGJpH" : {
+          "characters" : [ null, {
+            "eng" : 20,
+            "mec" : 25,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 11,
+            "name" : "Phillip",
+            "nav" : 15,
+            "pil" : 21,
+            "task" : "Sandcastles"
+          }, {
+            "eng" : 19,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 15,
+            "pil" : 25,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 24,
+            "mec" : 24,
+            "name" : "Vanessa",
+            "nav" : 12,
+            "pil" : 22,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 25,
+            "mec" : 12,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Andy",
+            "nav" : 13,
+            "pil" : 24,
+            "task" : "Plane"
+          }, {
+            "eng" : 24,
+            "mec" : 10,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 8,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 19,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 21,
+            "task" : "Stargazing"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Tinkering"
+          }, {
+            "eng" : 9,
+            "mec" : 24,
+            "name" : "Silvester",
+            "nav" : 18,
+            "pil" : 25,
+            "task" : "Stargazing"
+          } ],
+          "efficiency" : 79
+        },
+        "-LFciBylBjj5G0bfkujr" : {
+          "characters" : [ null, {
+            "eng" : 20,
+            "mec" : 25,
+            "name" : "Anna",
+            "nav" : 19,
+            "pil" : 13,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 11,
+            "name" : "Phillip",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Plane"
+          }, {
+            "eng" : 19,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 15,
+            "pil" : 25,
+            "task" : "Plane"
+          }, {
+            "eng" : 24,
+            "mec" : 24,
+            "name" : "Vanessa",
+            "nav" : 12,
+            "pil" : 22,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 12,
+            "name" : "Natasha",
+            "nav" : 14,
+            "pil" : 25,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Andy",
+            "nav" : 13,
+            "pil" : 24,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 16,
+            "name" : "Susan",
+            "nav" : 23,
+            "pil" : 14,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 21,
+            "task" : "Plane"
+          }, {
+            "eng" : 25,
+            "mec" : 20,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 14,
+            "task" : "Plane"
+          }, {
+            "eng" : 9,
+            "mec" : 24,
+            "name" : "Silvester",
+            "nav" : 18,
+            "pil" : 25,
+            "task" : "Plane"
+          } ],
+          "efficiency" : 80
+        },
+        "-LFcivL_ss-8DC3FdZBn" : {
+          "characters" : [ null, {
+            "eng" : 23,
+            "mec" : 25,
+            "name" : "Anna",
+            "nav" : 23,
+            "pil" : 12,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 14,
+            "name" : "Phillip",
+            "nav" : 16,
+            "pil" : 25,
+            "task" : "Campfire"
+          }, {
+            "eng" : 21,
+            "mec" : 25,
+            "name" : "Toshi",
+            "nav" : 17,
+            "pil" : 25,
+            "task" : "Campfire"
+          }, {
+            "eng" : 24,
+            "mec" : 24,
+            "name" : "Vanessa",
+            "nav" : 15,
+            "pil" : 22,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 15,
+            "name" : "Natasha",
+            "nav" : 16,
+            "pil" : 25,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 21,
+            "name" : "Andy",
+            "nav" : 16,
+            "pil" : 24,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 18,
+            "name" : "Susan",
+            "nav" : 24,
+            "pil" : 16,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 21,
+            "name" : "Laura",
+            "nav" : 25,
+            "pil" : 22,
+            "task" : "Campfire"
+          }, {
+            "eng" : 25,
+            "mec" : 21,
+            "name" : "Patricia",
+            "nav" : 22,
+            "pil" : 17,
+            "task" : "Campfire"
+          }, {
+            "eng" : 13,
+            "mec" : 24,
+            "name" : "Silvester",
+            "nav" : 20,
+            "pil" : 25,
+            "task" : "Campfire"
+          } ],
+          "efficiency" : 85
+        }
+      }
+    },
+    "-LGGPne2j86nlYSIKXK3" : {
+      "scenario" : "linear",
+      "timestamp" : 1530374339202,
+      "turns" : {
+        "-LGGPneAxIsrpJw81p3a" : {
+          "characters" : [ null, {
+            "eng" : 10,
+            "mec" : 11,
+            "name" : "Arnold",
+            "nav" : 20,
+            "pil" : 10,
+            "task" : "Idling"
+          }, {
+            "eng" : 18,
+            "mec" : 2,
+            "name" : "Phillip",
+            "nav" : 9,
+            "pil" : 3,
+            "task" : "Idling"
+          }, {
+            "eng" : 7,
+            "mec" : 21,
+            "name" : "Cedric",
+            "nav" : 10,
+            "pil" : 18,
+            "task" : "Idling"
+          }, {
+            "eng" : 16,
+            "mec" : 19,
+            "name" : "Vanessa",
+            "nav" : 12,
+            "pil" : 12,
+            "task" : "Idling"
+          }, {
+            "eng" : 23,
+            "mec" : 5,
+            "name" : "Max",
+            "nav" : 4,
+            "pil" : 22,
+            "task" : "Idling"
+          }, {
+            "eng" : 12,
+            "mec" : 11,
+            "name" : "Andrea",
+            "nav" : 3,
+            "pil" : 17,
+            "task" : "Idling"
+          }, {
+            "eng" : 13,
+            "mec" : 6,
+            "name" : "Kevin",
+            "nav" : 14,
+            "pil" : 8,
+            "task" : "Idling"
+          }, {
+            "eng" : 18,
+            "mec" : 3,
+            "name" : "Gerhard",
+            "nav" : 21,
+            "pil" : 17,
+            "task" : "Idling"
+          }, {
+            "eng" : 4,
+            "mec" : 5,
+            "name" : "Susan",
+            "nav" : 20,
+            "pil" : 3,
+            "task" : "Idling"
+          }, {
+            "eng" : 1,
+            "mec" : 12,
+            "name" : "Thomas",
+            "nav" : 2,
+            "pil" : 17,
+            "task" : "Idling"
+          } ],
+          "efficiency" : 46
+        }
+      }
+    }
+  }
+}
