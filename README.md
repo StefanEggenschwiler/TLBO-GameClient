@@ -6,7 +6,7 @@ This is the repository of the prototype artefact containing the code for the gam
 
 ### Prerequisits
 
-NodeJS/npm: https://nodejs.org/en/download/
+* [Node.js/npm](https://nodejs.org/en/download/)
 
 ### In npm client
 Install Aurelia CLI and Yarn:
