@@ -1,6 +1,6 @@
 # Gamiﬁcation of an Optimisation Algorithm - Prototype Game Client
 
-This is the repository of the prototype artefact containing the code for the game client.
+This is the repository of the prototype artefact containing the code for the game client. The game client was developed as part of the Innovation Thinking Project for the Business Information Systems master degree program at the [University of Applied Science Northwestern Switzerland](https://www.fhnw.ch/en/degree-programmes/business/msc-bis).
 
 ## Getting Started
 
@@ -30,11 +30,16 @@ au run --watch
 http://localhost:8081
 ```
 
-## Author
+## Authors
 
 * **Stefan Eggenschwiler**
 
 See also the list of [contributors](https://github.com/StefanEggenschwiler/TLBO-GameClient/contributors) who participated in this project.
+
+## Supervisors
+
+* **[Dr. Elzbieta Pustulka](https://www.fhnw.ch/de/personen/elzbieta-pustulka)**
+* **[Prof. Dr. Thomas Hanne](https://www.fhnw.ch/de/personen/thomas-hanne)**
 
 ## License
 
