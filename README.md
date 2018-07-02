@@ -43,7 +43,7 @@ In the following section, we will go over how to use the game client to display 
 The last entry represents the last created game ID.
 ```
 
-* **We copy this ID into the input field and click on the button labeled "Initiate Game":**
+* **We copy this ID into the input field that is displayed when we navigate to the web application and click on the button labeled "Initiate Game":**
 
 ![Client Init Screen](https://drive.switch.ch/index.php/s/uu0jnEqBLu2H9Xa/download?path=%2F&files=Client_Init.PNG)
 * **The character sheets of the ten characters will be displayed below:**
@@ -52,7 +52,7 @@ The last entry represents the last created game ID.
 
 * The integer (1-10) corresponds to the number on the back of the character character.
 * Under 'Task' we can see the task the character was performing last turn.
-* The color in the slider corresponds on how the attribute has changed compared to last turn:
+* The color of the slider range corresponds to how the attribute has changed compared to last turn:
   * ![#32CD32](https://placehold.it/15/32CD32/000000?text=+) `Positive change`
   * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Negative change`
   * ![#696969](https://placehold.it/15/696969/000000?text=+) `No change`
