@@ -51,7 +51,7 @@ The last entry represents the last created game ID.
 ![Client Character Sheet](https://drive.switch.ch/index.php/s/uu0jnEqBLu2H9Xa/download?path=%2F&files=Client_Sheet.PNG)
 
 * The integer (1-10) corresponds to the number on the back of the character character.
-* Under 'Task' we can see the task the character was performing last turn.
+* Next to 'Task' we can see the task the character was performing last turn.
 * The color of the slider range corresponds to how the attribute has changed compared to last turn:
   * ![#32CD32](https://placehold.it/15/32CD32/000000?text=+) `Positive change`
   * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Negative change`
